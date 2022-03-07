@@ -1,0 +1,12 @@
+workflows:
+  example-workflow:
+    name: 3DObject Workflow
+    scripts:
+      - name: CICD Started
+        script: echo "Hello Codemagician!"
+      - name: Build project
+        script: ./HelloPhotogrammetry ./Krishna ./KrishnaOutput
+    publishing:
+      email:
+        recipients:
+          - yashpatel49000@gmail.com
