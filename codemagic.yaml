@@ -4,6 +4,9 @@ workflows:
     scripts:
       - name: CICD Started
         script: echo "Hello Codemagician!"
+      - name: Copy directories 
+        script: cp  -r ./Krishna $CM_EXPORT_DIR/Krishna
+        script: cp  -r ./KrishnaOutput $CM_EXPORT_DIR/KrishnaOutput
       - name: Build project
         script: ./HelloPhotogrammetry ./Krishna ./KrishnaOutput
     publishing:
